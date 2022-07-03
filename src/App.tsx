@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ActionButton from "./components/ActionButton";
+import {
+  LinkContent,
+  TextContent,
+} from "./components/ActionButton/ActionButton.types";
+
+const items = [
+  {
+    type: "link",
+    url: "https://www.google.com.br/",
+    text: "Google",
+  },
+  {
+    type: "link",
+    url: "https://www.google.com.br/",
+    text: "Google",
+  },
+  {
+    type: "link",
+    url: "https://www.google.com.br/",
+    text: "Google",
+  },
+  {
+    type: "link",
+    url: "https://www.google.com.br/",
+    text: "Google",
+  },
+  {
+    type: "text",
+    value: "Texto aqui",
+    callback: () => console.log("text"),
+  },
+] as (LinkContent | TextContent)[];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ActionButton list={items} />
+      <ActionButton list={items} popoverDirection="right" />
     </div>
   );
 }

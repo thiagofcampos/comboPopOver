@@ -1,0 +1,38 @@
+.Action-button-wrapper {
+  position: relative;
+}
+
+.Action-button-container {
+  padding: 10px;
+  background-color: #8a98b4;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.Action-button-container:hover {
+  background-color: #424855;
+}
+
+.Action-button-card-right {
+  left: 100%;
+  top: 40%;
+  transform: translateY(5%);
+  position: absolute;
+}
+
+.Action-button-card-left {
+  right: 100%;
+  top: 40%;
+  transform: translateY(5%);
+  position: absolute;
+}
+
+.Action-button-card-items {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Action-button-card-items:hover {
+  background-color: #424855;
+}

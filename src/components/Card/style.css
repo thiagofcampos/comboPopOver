@@ -1,0 +1,6 @@
+.Card-container {
+  background-color: #8a98b4;
+  width: 150px;
+  max-height: 300px;
+  overflow: auto;
+}
